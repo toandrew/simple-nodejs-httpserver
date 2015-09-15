@@ -636,9 +636,9 @@ var accountUnFreeze = new UnFreeze(); // unfreeze account
 var accountDestroy = new Destroy(); // destroy account
 
 var sendCode = new SendCode(); // forgot password: send code
-var verifyCode = new VerifyCode(); // forgot password: send code
-var resetPwd = new Reset(); // forgot password: send code
-var changePwd = new Change(); // forgot password: send code
+var verifyCode = new VerifyCode(); // forgot password: verify code
+var resetPwd = new Reset(); // forgot password: reset pwd 
+var changePwd = new Change(); // change password: change pwd
 
 // add handlers for different requests!
 addRoute(/\/v1\/account\/checkuser/, checkuser); // for '/v1/account/checkuser'
@@ -654,7 +654,7 @@ addRoute(/\/v1\/account\/destroy$/, accountDestroy); // for '/v1/account/destroy
 addRoute(/\/v1\/password\/forgot\/send_code$/, sendCode); // for '/v1/password/forgot/send_code'
 addRoute(/\/v1\/password\/forgot\/verify_code$/, verifyCode); // for '/v1/password/forgot/verify_code'
 addRoute(/\/v1\/password\/forgot\/reset$/, resetPwd); // for '/v1/password/forgot/reset'
-addRoute(/\/v1\/password\/change$/, changePwd); // for '/v1/password/forgot/change'
+addRoute(/\/v1\/password\/change$/, changePwd); // for '/v1/password/change'
 
 // Now, create http server
 http.createServer(function (request, response) {
