@@ -48,6 +48,20 @@ HttpReqHandler.prototype.respondUnSupport = function(req, res) {
     return this.respond(req, res, 400);
 }
 
+HttpReqHandler.prototype.respondError = function(req, res, statusCode, err, errno, message, more) {
+    var errorMsg = {
+  	"status": statusCode,  // matches the status code of the HTTP response
+  	"err": err,            // string description of the error type
+  	"errno": errno,        // error number of the erro
+  	"message": message,    // error messages
+  	"more": more           // link to more info about this error
+    };
+
+    var body = JSON.stringify(errorMsg);
+
+    return this.respond(req, res, statusCode, null, body);
+}
+
 // check user's status
 var CheckUser = function() {
 }
