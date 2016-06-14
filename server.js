@@ -8,10 +8,8 @@ var HttpReqHandler = function() {
 }
 
 HttpReqHandler.prototype.onHttpRequest = function(req, res) {
-    console.log('onHttpRequest!!!' + req.method);
     switch (req.method) {
         case "GET":
-            console.log('onHttpRequest!!!1');
             return this.onGet(req, res);
         case "POST":
            return this.onPost(req, res);
