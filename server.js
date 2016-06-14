@@ -8,8 +8,10 @@ var HttpReqHandler = function() {
 }
 
 HttpReqHandler.prototype.onHttpRequest = function(req, res) {
+    console.log('onHttpRequest!!!' + req.method);
     switch (req.method) {
         case "GET":
+            console.log('onHttpRequest!!!1');
             return this.onGet(req, res);
         case "POST":
            return this.onPost(req, res);
@@ -616,6 +618,599 @@ Change.prototype.onPost = function(req, res) {
     });
 }
 
+/**** Only for guitar demo   ***/
+var GetAllBasicCourses = function() {
+}
+
+GetAllBasicCourses.prototype = new HttpReqHandler();
+
+GetAllBasicCourses.prototype.onGet = function(req, res) {
+      var headers;
+      headers = {
+        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization, Accept*, X-Requested-With",
+        "Content-Type": "application/json"
+      };
+      res.writeHead(200, headers);
+
+      var allBasicCourses = {
+        "count": 6,
+
+        "info": [
+        {
+            "id": 1,
+            "type": "basic",
+            "title": "第一课",
+            "desc": "基础知识",
+            "count": 3,
+
+            "detail": [
+                    {
+                        "id": 1,
+                        "img": "/images/basic/1/1.png",
+                        "video_url": "/videos/basic/1/1.mp4",
+                        "qupu_url": "/qupu/basic/1/1.gp5",
+                        "other": "xxxxxx"
+                    },
+                    {
+                        "id": 2,
+                        "img": "/images/basic/1/2.png",
+                        "video_url": "/videos/basic/1/2.mp4",
+                        "qupu_url": "/qupu/basic/1/2.gp5",
+                        "other": "yyyy"
+                    },
+                    {
+                        "id": 3,
+                        "img": "/images/basic/1/3.png",
+                        "video_url": "/videos/basic/1/3.mp4",
+                        "qupu_url": "/qupu/basic/1/3.gp5",
+                        "other": "zzzz"
+                    },
+            ]
+        },
+        {
+            "id": 2,
+            "type": "basic",
+            "title": "第二课",
+            "desc": "Em和弦",
+            "count": 3,
+
+            "detail": [
+                    {
+                        "id": 1,
+                        "img": "/images/basic/2/1.png",
+                        "video_url": "/videos/basic/2/1.mp4",
+                        "qupu_url": "/qupu/basic/2/1.gp5",
+                        "other": "xxxxxx"
+                    },
+                    {
+                        "id": 2,
+                        "img": "/images/basic/2/2.png",
+                        "video_url": "/videos/basic/2/2.mp4",
+                        "qupu_url": "/qupu/basic/2/2.gp5",
+                        "other": "yyyy"
+                    },
+                    {
+                        "id": 3,
+                        "img": "/images/basic/2/3.png",
+                        "video_url": "/videos/basic/2/3.mp4",
+                        "qupu_url": "/qupu/basic/2/3.gp5",
+                        "other": "zzzz"
+                    },
+            ]
+        },
+        {
+            "id": 3,
+            "type": "basic",
+            "title": "第三课",
+            "desc": "Em和弦练习",
+            "count": 3,
+
+            "detail": [
+                    {
+                        "id": 1,
+                        "img": "/images/basic/3/1.png",
+                        "video_url": "/videos/basic/3/1.mp4",
+                        "qupu_url": "/qupu/basic/3/1.gp5",
+                        "other": "xxxxxx"
+                    },
+                    {
+                        "id": 2,
+                        "img": "/images/basic/3/2.png",
+                        "video_url": "/videos/basic/3/2.mp4",
+                        "qupu_url": "/qupu/basic/3/2.gp5",
+                        "other": "yyyy"
+                    },
+                    {
+                        "id": 3,
+                        "img": "/images/basic/3/3.png",
+                        "video_url": "/videos/basic/3/3.mp4",
+                        "qupu_url": "/qupu/basic/3/3.gp5",
+                        "other": "zzzz"
+                    },
+            ]
+        },
+        {
+            "id": 4,
+            "type": "basic",
+            "title": "第四课",
+            "desc": "Am和弦",
+            "count": 3,
+
+            "detail": [
+                    {
+                        "id": 1,
+                        "img": "/images/basic/4/1.png",
+                        "video_url": "/videos/basic/4/1.mp4",
+                        "qupu_url": "/qupu/basic/4/1.gp5",
+                        "other": "xxxxxx"
+                    },
+                    {
+                        "id": 2,
+                        "img": "/images/basic/4/2.png",
+                        "video_url": "/videos/basic/4/2.mp4",
+                        "qupu_url": "/qupu/basic/4/2.gp5",
+                        "other": "yyyy"
+                    },
+                    {
+                        "id": 3,
+                        "img": "/images/basic/4/3.png",
+                        "video_url": "/videos/basic/4/3.mp4",
+                        "qupu_url": "/qupu/basic/4/3.gp5",
+                        "other": "zzzz"
+                    },
+            ]
+        },
+        {
+            "id": 5,
+            "type": "basic",
+            "title": "第五课",
+            "desc": "Em-Am和弦转换",
+            "count": 3,
+
+            "detail": [
+                    {
+                        "id": 1,
+                        "img": "/images/basic/5/1.png",
+                        "video_url": "/videos/basic/5/1.mp4",
+                        "qupu_url": "/qupu/basic/5/1.gp5",
+                        "other": "xxxxxx"
+                    },
+                    {
+                        "id": 2,
+                        "img": "/images/basic/5/2.png",
+                        "video_url": "/videos/basic/5/2.mp4",
+                        "qupu_url": "/qupu/basic/5/2.gp5",
+                        "other": "yyyy"
+                    },
+                    {
+                        "id": 3,
+                        "img": "/images/basic/5/3.png",
+                        "video_url": "/videos/basic/5/3.mp4",
+                        "qupu_url": "/qupu/basic/5/3.gp5",
+                        "other": "zzzz"
+                    },
+            ]
+        },
+        {
+            "id": 6,
+            "type": "basic",
+            "title": "第六课",
+            "desc": "演奏全曲",
+            "count": 3,
+
+            "detail": [
+                    {
+                        "id": 1,
+                        "img": "/images/basic/6/1.png",
+                        "video_url": "/videos/basic/6/1.mp4",
+                        "qupu_url": "/qupu/basic/6/1.gp5",
+                        "other": "xxxxxx"
+                    },
+                    {
+                        "id": 2,
+                        "img": "/images/basic/6/2.png",
+                        "video_url": "/videos/basic/6/2.mp4",
+                        "qupu_url": "/qupu/basic/6/2.gp5",
+                        "other": "yyyy"
+                    },
+                    {
+                        "id": 3,
+                        "img": "/images/basic/6/3.png",
+                        "video_url": "/videos/basic/6/3.mp4",
+                        "qupu_url": "/qupu/basic/6/3.gp5",
+                        "other": "zzzz"
+                    },
+            ]
+        },
+        ]
+      };
+
+      res.write(JSON.stringify(allBasicCourses));
+      return res.end();
+}
+
+GetAllBasicCourses.prototype.onPost = function(req, res) {
+    return this.respond(req, res, 400);
+}
+
+var GetAllAdvancedCourses = function() {
+}
+
+GetAllAdvancedCourses.prototype = new HttpReqHandler();
+
+GetAllAdvancedCourses.prototype.onGet = function(req, res) {
+      var headers;
+      headers = {
+        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization, Accept*, X-Requested-With",
+        "Content-Type": "application/json"
+      };
+      res.writeHead(200, headers);
+
+     var allAdvancedCourses = {
+        "count": 6,
+
+        "info": 
+        [
+            {
+                "id": 1,
+                "type": "advanced",
+                "title": "扫弦",
+                "desc": "扫弦",
+                "count": 3,
+
+                "detail": [
+                        {
+                            "id": 1,
+                            "img": "/images/advanced/1/1.png",
+                            "video_url": "/videos/advanced/1/1.mp4",
+                            "qupu_url": "/qupu/advanced/1/1.gp5",
+                            "other": "xxxxxx"
+                        },
+                        {
+                            "id": 2,
+                            "img": "/images/advanced/1/2.png",
+                            "video_url": "/videos/advanced/1/2.mp4",
+                            "qupu_url": "/qupu/advanced/1/2.gp5",
+                            "other": "yyyy"
+                        },
+                        {
+                            "id": 3,
+                            "img": "/images/advanced/1/3.png",
+                            "video_url": "/videos/advanced/1/3.mp4",
+                            "qupu_url": "/qupu/advanced/1/3.gp5",
+                            "other": "zzzz"
+                        },
+                ]
+            },
+            {
+                "id": 2,
+                "type": "advanced",
+                "title": "分解和弦",
+                "desc": "分解和弦",
+                "count": 3,
+
+                "detail": [
+                        {
+                            "id": 1,
+                            "img": "/images/advanced/2/1.png",
+                            "video_url": "/videos/advanced/2/1.mp4",
+                            "qupu_url": "/qupu/advanced/2/1.gp5",
+                            "other": "xxxxxx"
+                        },
+                        {
+                            "id": 2,
+                            "img": "/images/advanced/2/2.png",
+                            "video_url": "/videos/advanced/2/2.mp4",
+                            "qupu_url": "/qupu/advanced/2/2.gp5",
+                            "other": "yyyy"
+                        },
+                        {
+                            "id": 3,
+                            "img": "/images/advanced/2/3.png",
+                            "video_url": "/videos/advanced/2/3.mp4",
+                            "qupu_url": "/qupu/advanced/2/3.gp5",
+                            "other": "zzzz"
+                        },
+                ]
+            },
+            {
+                "id": 3,
+                "type": "advanced",
+                "title": "击勾弦",
+                "desc": "击勾弦",
+                "count": 3,
+
+                "detail": [
+                        {
+                            "id": 1,
+                            "img": "/images/advanced/3/1.png",
+                            "video_url": "/videos/advanced/3/1.mp4",
+                            "qupu_url": "/qupu/advanced/3/1.gp5",
+                            "other": "xxxxxx"
+                        },
+                        {
+                            "id": 2,
+                            "img": "/images/advanced/3/2.png",
+                            "video_url": "/videos/advanced/3/2.mp4",
+                            "qupu_url": "/qupu/advanced/3/2.gp5",
+                            "other": "yyyy"
+                        },
+                        {
+                            "id": 3,
+                            "img": "/images/advanced/3/3.png",
+                            "video_url": "/videos/advanced/3/3.mp4",
+                            "qupu_url": "/qupu/advanced/3/3.gp5",
+                            "other": "zzzz"
+                        },
+                ]
+            },
+            {
+                "id": 4,
+                "type": "advanced",
+                "title": "切音",
+                "desc": "切音",
+                "count": 3,
+
+                "detail": [
+                        {
+                            "id": 1,
+                            "img": "/images/advanced/4/1.png",
+                            "video_url": "/videos/advanced/4/1.mp4",
+                            "qupu_url": "/qupu/advanced/4/1.gp5",
+                            "other": "xxxxxx"
+                        },
+                        {
+                            "id": 2,
+                            "img": "/images/advanced/4/2.png",
+                            "video_url": "/videos/advanced/4/2.mp4",
+                            "qupu_url": "/qupu/advanced/4/2.gp5",
+                            "other": "yyyy"
+                        },
+                        {
+                            "id": 3,
+                            "img": "/images/advanced/4/3.png",
+                            "video_url": "/videos/advanced/4/3.mp4",
+                            "qupu_url": "/qupu/advanced/4/3.gp5",
+                            "other": "zzzz"
+                        },
+                ]
+            },
+            {
+                "id": 5,
+                "type": "advanced",
+                "title": "泛音",
+                "desc": "泛音",
+                "count": 3,
+
+                "detail": [
+                        {
+                            "id": 1,
+                            "img": "/images/advanced/5/1.png",
+                            "video_url": "/videos/advanced/5/1.mp4",
+                            "qupu_url": "/qupu/advanced/5/1.gp5",
+                            "other": "xxxxxx"
+                        },
+                        {
+                            "id": 2,
+                            "img": "/images/advanced/5/2.png",
+                            "video_url": "/videos/advanced/5/2.mp4",
+                            "qupu_url": "/qupu/advanced/5/2.gp5",
+                            "other": "yyyy"
+                        },
+                        {
+                            "id": 3,
+                            "img": "/images/advanced/5/3.png",
+                            "video_url": "/videos/advanced/5/3.mp4",
+                            "qupu_url": "/qupu/advanced/5/3.gp5",
+                            "other": "zzzz"
+                        },
+                ]
+            },
+            {
+                "id": 6,
+                "type": "advanced",
+                "title": "滑音",
+                "desc": "滑音",
+                "count": 3,
+
+                "detail": [
+                        {
+                            "id": 1,
+                            "img": "/images/advanced/6/1.png",
+                            "video_url": "/videos/advanced/6/1.mp4",
+                            "qupu_url": "/qupu/advanced/6/1.gp5",
+                            "other": "xxxxxx"
+                        },
+                        {
+                            "id": 2,
+                            "img": "/images/advanced/6/2.png",
+                            "video_url": "/videos/advanced/6/2.mp4",
+                            "qupu_url": "/qupu/advanced/6/2.gp5",
+                            "other": "yyyy"
+                        },
+                        {
+                            "id": 3,
+                            "img": "/images/advanced/6/3.png",
+                            "video_url": "/videos/advanced/6/3.mp4",
+                            "qupu_url": "/qupu/advanced/6/3.gp5",
+                            "other": "zzzz"
+                        },
+                ]
+            },
+        ]
+      };
+
+      res.write(JSON.stringify(allAdvancedCourses));
+      return res.end();
+}
+
+GetAllAdvancedCourses.prototype.onPost = function(req, res) {
+    return this.respond(req, res, 400);
+}
+
+var GetSomeQupu = function() {
+}
+
+GetSomeQupu.prototype = new HttpReqHandler();
+
+GetSomeQupu.prototype.onGet = function(req, res) {
+      var headers;
+      headers = {
+        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization, Accept*, X-Requested-With",
+        "Content-Type": "application/json"
+      };
+      res.writeHead(200, headers);
+
+     var somQupu = {
+       "count": 3,
+
+        "info": 
+        [
+            {
+                "id": 1,
+                "type": "basic",
+                "title": "天空之城",
+                "desc": "天空之城",
+
+                "detail": 
+                {
+                            "img": "/images/advanced/1/1.png",
+                            "video_url": "/videos/advanced/1/1.mp4",
+                            "qupu_url": "/qupu/advanced/1/1.gp5",
+                            "other": "xxxxxx"
+                },
+            },
+            {
+                "id": 2,
+                "type": "basic",
+                "title": "青春舞曲",
+                "desc": "青春舞曲",
+                "count": 3,
+
+                "detail": 
+                {
+                            "img": "/images/advanced/2/1.png",
+                            "video_url": "/videos/advanced/2/1.mp4",
+                            "qupu_url": "/qupu/advanced/2/1.gp5",
+                            "other": "xxxxxx"
+                },
+            },
+            {
+                "id": 3,
+                "type": "basic",
+                "title": "月半小夜曲",
+                "desc": "月半小夜曲",
+
+                "detail": 
+                {
+                            "img": "/images/advanced/3/1.png",
+                            "video_url": "/videos/advanced/3/1.mp4",
+                            "qupu_url": "/qupu/advanced/3/1.gp5",
+                            "other": "xxxxxx"
+                }
+            }
+        ]
+      };
+
+      res.write(JSON.stringify(somQupu));
+      return res.end();
+}
+
+GetSomeQupu.prototype.onPost = function(req, res) {
+    return this.respond(req, res, 400);
+}
+
+var SearchQupu = function() {
+}
+
+SearchQupu.prototype = new HttpReqHandler();
+
+SearchQupu.prototype.onGet = function(req, res) {
+      var headers;
+      headers = {
+        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization, Accept*, X-Requested-With",
+        "Content-Type": "application/json"
+      };
+      res.writeHead(200, headers);
+
+     var searchedQupu = 
+     {  
+       "count": 6,
+
+        "info": [
+            {
+                "id": 1,
+                "type": "basic",
+                "title": "青春舞曲",
+                "desc": "青春舞曲（简单版）",
+                "detail":
+                {
+                            "img": "/images/advanced/1/1.png",
+                            "video_url": "/videos/advanced/1/1.mp4",
+                            "qupu_url": "/qupu/advanced/1/1.gp5",
+                            "other": "xxxxxx"
+                }
+            },
+            {
+                "id": 2,
+                "type": "advanced",
+                "title": "青春舞曲",
+                "desc": "青春舞曲（进阶版）",
+
+                "detail": 
+                {
+                            "img": "/images/advanced/2/1.png",
+                            "video_url": "/videos/advanced/2/1.mp4",
+                            "qupu_url": "/qupu/advanced/2/1.gp5",
+                            "other": "xxxxxx"
+                },
+            },
+            {
+                "id": 3,
+                "type": "advanced",
+                "title": "青春舞曲",
+                "desc": "青春舞曲（高级版）",
+
+                "detail":
+                {
+                            "img": "/images/advanced/3/1.png",
+                            "video_url": "/videos/advanced/3/1.mp4",
+                            "qupu_url": "/qupu/advanced/3/1.gp5",
+                            "other": "xxxxxx"
+                },
+            },
+            {
+                "id": 4,
+                "type": "advanced",
+                "title": "青春舞曲",
+                "desc": "青春舞曲（网友整理）",
+                "detail": 
+                {
+                            "img": "/images/advanced/4/1.png",
+                            "video_url": "/videos/advanced/4/1.mp4",
+                            "qupu_url": "/qupu/advanced/4/1.gp5",
+                            "other": "xxxxxx"
+                },
+            },
+        ]
+      };
+
+      res.write(JSON.stringify(searchedQupu));
+      return res.end();
+}
+
+SearchQupu.prototype.onPost = function(req, res) {
+    return this.respond(req, res, 400);
+}
+
 // add route handler
 function addRoute(path, handler) {
     routes.push({
@@ -669,6 +1264,18 @@ addRoute(/\/v1\/password\/forgot\/send_code$/, sendCode); // for '/v1/password/f
 addRoute(/\/v1\/password\/forgot\/verify_code$/, verifyCode); // for '/v1/password/forgot/verify_code'
 addRoute(/\/v1\/password\/forgot\/reset$/, resetPwd); // for '/v1/password/forgot/reset'
 addRoute(/\/v1\/password\/change$/, changePwd); // for '/v1/password/change'
+
+// for guitar demo
+var getAllBasicCourses = new GetAllBasicCourses(); // get basic courses
+var getAllAdvancedCourses = new GetAllAdvancedCourses(); // get advanced courses
+var getSomeQupu = new GetSomeQupu(); // get some qupu
+var searchQupu = new SearchQupu(); // search some qupu
+
+addRoute(/\/v1\/courses\/basic$/, getAllBasicCourses); // for '/v1/courses/basic'
+addRoute(/\/v1\/courses\/advanced$/, getAllAdvancedCourses); // for '/v1/courses/advanced'
+
+addRoute(/\/v1\/qupu$/, getSomeQupu); // for '/v1/qupu/'
+addRoute(/\/v1\/qupu\/search/, searchQupu); // for '/v1/courses/search'
 
 // Now, create http server
 http.createServer(function (request, response) {
