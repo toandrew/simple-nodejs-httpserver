@@ -1157,7 +1157,7 @@ SearchQupu.prototype.onGet = function(req, res) {
                 "desc": "青春舞曲（简单版）",
                 "detail":
                 {
-                            "img": RES_HOST + "/qupu/basic/1/images/1.png",
+                            "img": RES_HOST + "/qupu/basic/1/images/1.jpg",
                             "video_url": RES_HOST + "/qupu/basic/1/videos/1.mp4",
                             "qupu_url": RES_HOST + "/qupu/basic/1/qupu/1.gp5",
                             "other": "xxxxxx"
@@ -1171,9 +1171,9 @@ SearchQupu.prototype.onGet = function(req, res) {
 
                 "detail": 
                 {
-                            "img": RES_HOST + "/qupu/advanced/2/images/1.png",
-                            "video_url": RES_HOST + "/qupu/advanced/2/videos/1.mp4",
-                            "qupu_url": RES_HOST + "/qupu/advanced/2/qupu/1.gp5",
+                            "img": RES_HOST + "/qupu/advanced/1/images/1.jpg",
+                            "video_url": RES_HOST + "/qupu/advanced/1/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/qupu/advanced/1/qupu/1.gp5",
                             "other": "xxxxxx"
                 },
             },
@@ -1185,9 +1185,9 @@ SearchQupu.prototype.onGet = function(req, res) {
 
                 "detail":
                 {
-                            "img": RES_HOST + "/qupu/hard/3/images/1.png",
-                            "video_url": RES_HOST + "/qupu/hard/3/videos/1.mp4",
-                            "qupu_url": RES_HOST + "/qupu/hard/3/qupu/1.gp5",
+                            "img": RES_HOST + "/qupu/hard/1/images/1.jpg",
+                            "video_url": RES_HOST + "/qupu/hard/1/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/qupu/hard/1/qupu/1.gp5",
                             "other": "xxxxxx"
                 },
             },
@@ -1198,9 +1198,9 @@ SearchQupu.prototype.onGet = function(req, res) {
                 "desc": "青春舞曲（网友整理）",
                 "detail": 
                 {
-                            "img": RES_HOST + "/qupu/customed/4/images/1.png",
-                            "video_url": RES_HOST + "/qupu/customed/4/videos/1.mp4",
-                            "qupu_url": RES_HOST + "/qupu/customed/4/qupu/1.gp5",
+                            "img": RES_HOST + "/qupu/customed/1/images/1.jpg",
+                            "video_url": RES_HOST + "/qupu/customed/1/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/qupu/customed/1/qupu/1.gp5",
                             "other": "xxxxxx"
                 },
             },
