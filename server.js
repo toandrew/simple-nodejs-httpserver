@@ -617,6 +617,8 @@ Change.prototype.onPost = function(req, res) {
 }
 
 /**** Only for guitar demo   ***/
+const RES_HOST = 'http://127.0.0.1:9527';
+
 var GetAllBasicCourses = function() {
 }
 
@@ -642,27 +644,27 @@ GetAllBasicCourses.prototype.onGet = function(req, res) {
             "title": "第一课",
             "desc": "基础知识",
             "count": 3,
-
+            "img": RES_HOST + "/courses/basic/1/images/1.jpg",
             "detail": [
                     {
                         "id": 1,
-                        "img": "/images/basic/1/1.png",
-                        "video_url": "/videos/basic/1/1.mp4",
-                        "qupu_url": "/qupu/basic/1/1.gp5",
-                        "other": "xxxxxx"
+                        "img": RES_HOST + "/courses/basic/1/images/1.jpg",
+                        "video_url": RES_HOST + "/courses/basic/1/videos/1.mp4",
+                        "qupu_url": RES_HOST + "/courses/basic/1/qupu/1.gp5",
+                        "other":  "xxxxxx"
                     },
                     {
                         "id": 2,
-                        "img": "/images/basic/1/2.png",
-                        "video_url": "/videos/basic/1/2.mp4",
-                        "qupu_url": "/qupu/basic/1/2.gp5",
+                        "img": RES_HOST + "/courses/basic/1/images/2.jpg",
+                        "video_url": RES_HOST + "/courses/basic/1/videos/2.mp4",
+                        "qupu_url": RES_HOST + "/courses/basic/1/qupu/2.gp5",
                         "other": "yyyy"
                     },
                     {
                         "id": 3,
-                        "img": "/images/basic/1/3.png",
-                        "video_url": "/videos/basic/1/3.mp4",
-                        "qupu_url": "/qupu/basic/1/3.gp5",
+                        "img": RES_HOST + "/courses/basic/1/images/3.jpg",
+                        "video_url": RES_HOST + "/courses/basic/1/video/3.mp4",
+                        "qupu_url": RES_HOST + "/courses/basic/1/3.gp5",
                         "other": "zzzz"
                     },
             ]
@@ -673,27 +675,27 @@ GetAllBasicCourses.prototype.onGet = function(req, res) {
             "title": "第二课",
             "desc": "Em和弦",
             "count": 3,
-
+            "img": RES_HOST + "/courses/basic/2/images/1.jpg",
             "detail": [
                     {
                         "id": 1,
-                        "img": "/images/basic/2/1.png",
-                        "video_url": "/videos/basic/2/1.mp4",
-                        "qupu_url": "/qupu/basic/2/1.gp5",
+                        "img": RES_HOST + "/courses/basic/2/images/1.jpg",
+                        "video_url": RES_HOST + "/courses/basic/2/videos/1.mp4",
+                        "qupu_url": RES_HOST + "/courses/basic/2/qupu/1.gp5",
                         "other": "xxxxxx"
                     },
                     {
                         "id": 2,
-                        "img": "/images/basic/2/2.png",
-                        "video_url": "/videos/basic/2/2.mp4",
-                        "qupu_url": "/qupu/basic/2/2.gp5",
+                        "img": RES_HOST + "/courses/basic/2/images/2.jpg",
+                        "video_url": RES_HOST + "/courses/basic/2/videos/2.mp4",
+                        "qupu_url": RES_HOST + "/courses/basic/2/qupu/2.gp5",
                         "other": "yyyy"
                     },
                     {
                         "id": 3,
-                        "img": "/images/basic/2/3.png",
-                        "video_url": "/videos/basic/2/3.mp4",
-                        "qupu_url": "/qupu/basic/2/3.gp5",
+                        "img": RES_HOST + "/courses/basic/2/images/3.jpg",
+                        "video_url": RES_HOST + "/courses/basic/2/video/3.mp4",
+                        "qupu_url": RES_HOST + "/courses/basic/2/3.gp5",
                         "other": "zzzz"
                     },
             ]
@@ -704,27 +706,27 @@ GetAllBasicCourses.prototype.onGet = function(req, res) {
             "title": "第三课",
             "desc": "Em和弦练习",
             "count": 3,
-
+            "img": RES_HOST + "/courses/basic/3/images/1.jpg",
             "detail": [
                     {
                         "id": 1,
-                        "img": "/images/basic/3/1.png",
-                        "video_url": "/videos/basic/3/1.mp4",
-                        "qupu_url": "/qupu/basic/3/1.gp5",
+                        "img": RES_HOST + "/courses/basic/3/images/1.jpg",
+                        "video_url": RES_HOST + "/courses/basic/3/videos/1.mp4",
+                        "qupu_url": RES_HOST + "/courses/basic/3/qupu/1.gp5",
                         "other": "xxxxxx"
                     },
                     {
                         "id": 2,
-                        "img": "/images/basic/3/2.png",
-                        "video_url": "/videos/basic/3/2.mp4",
-                        "qupu_url": "/qupu/basic/3/2.gp5",
+                        "img": RES_HOST + "/courses/basic/3/images/2.jpg",
+                        "video_url": RES_HOST + "/courses/basic/3/videos/2.mp4",
+                        "qupu_url": RES_HOST + "/courses/basic/3/qupu/2.gp5",
                         "other": "yyyy"
                     },
                     {
                         "id": 3,
-                        "img": "/images/basic/3/3.png",
-                        "video_url": "/videos/basic/3/3.mp4",
-                        "qupu_url": "/qupu/basic/3/3.gp5",
+                        "img": RES_HOST + "/courses/basic/3/images/3.jpg",
+                        "video_url": RES_HOST + "/courses/basic/3/video/3.mp4",
+                        "qupu_url": RES_HOST + "/courses/basic/3/3.gp5",
                         "other": "zzzz"
                     },
             ]
@@ -735,27 +737,27 @@ GetAllBasicCourses.prototype.onGet = function(req, res) {
             "title": "第四课",
             "desc": "Am和弦",
             "count": 3,
-
+            "img": RES_HOST + "/courses/basic/4/images/1.jpg",
             "detail": [
                     {
                         "id": 1,
-                        "img": "/images/basic/4/1.png",
-                        "video_url": "/videos/basic/4/1.mp4",
-                        "qupu_url": "/qupu/basic/4/1.gp5",
+                        "img": RES_HOST + "/courses/basic/4/images/1.jpg",
+                        "video_url": RES_HOST + "/courses/basic/4/videos/1.mp4",
+                        "qupu_url": RES_HOST + "/courses/basic/4/qupu/1.gp5",
                         "other": "xxxxxx"
                     },
                     {
                         "id": 2,
-                        "img": "/images/basic/4/2.png",
-                        "video_url": "/videos/basic/4/2.mp4",
-                        "qupu_url": "/qupu/basic/4/2.gp5",
+                        "img": RES_HOST + "/courses/basic/4/images/2.jpg",
+                        "video_url": RES_HOST + "/courses/basic/4/videos/2.mp4",
+                        "qupu_url": RES_HOST + "/courses/basic/4/qupu/2.gp5",
                         "other": "yyyy"
                     },
                     {
                         "id": 3,
-                        "img": "/images/basic/4/3.png",
-                        "video_url": "/videos/basic/4/3.mp4",
-                        "qupu_url": "/qupu/basic/4/3.gp5",
+                        "img": RES_HOST + "/courses/basic/4/images/3.jpg",
+                        "video_url": RES_HOST + "/courses/basic/4/video/3.mp4",
+                        "qupu_url": RES_HOST + "/courses/basic/4/3.gp5",
                         "other": "zzzz"
                     },
             ]
@@ -766,27 +768,28 @@ GetAllBasicCourses.prototype.onGet = function(req, res) {
             "title": "第五课",
             "desc": "Em-Am和弦转换",
             "count": 3,
+            "img": RES_HOST + "/courses/basic/5/images/1.jpg",
 
             "detail": [
                     {
                         "id": 1,
-                        "img": "/images/basic/5/1.png",
-                        "video_url": "/videos/basic/5/1.mp4",
-                        "qupu_url": "/qupu/basic/5/1.gp5",
+                        "img": RES_HOST + "/courses/basic/5/images/1.jpg",
+                        "video_url": RES_HOST + "/courses/basic/5/videos/1.mp4",
+                        "qupu_url": RES_HOST + "/courses/basic/5/qupu/1.gp5",
                         "other": "xxxxxx"
                     },
                     {
                         "id": 2,
-                        "img": "/images/basic/5/2.png",
-                        "video_url": "/videos/basic/5/2.mp4",
-                        "qupu_url": "/qupu/basic/5/2.gp5",
+                        "img": RES_HOST + "/courses/basic/5/images/2.jpg",
+                        "video_url": RES_HOST + "/courses/basic/5/videos/2.mp4",
+                        "qupu_url": RES_HOST + "/courses/basic/5/qupu/2.gp5",
                         "other": "yyyy"
                     },
                     {
                         "id": 3,
-                        "img": "/images/basic/5/3.png",
-                        "video_url": "/videos/basic/5/3.mp4",
-                        "qupu_url": "/qupu/basic/5/3.gp5",
+                        "img": RES_HOST + "/courses/basic/1/images/5.jpg",
+                        "video_url": RES_HOST + "/courses/basic/5/video/3.mp4",
+                        "qupu_url": RES_HOST + "/courses/basic/5/3.gp5",
                         "other": "zzzz"
                     },
             ]
@@ -798,26 +801,28 @@ GetAllBasicCourses.prototype.onGet = function(req, res) {
             "desc": "演奏全曲",
             "count": 3,
 
+            "img": RES_HOST + "/courses/basic/6/images/1.jpg",
+
             "detail": [
                     {
                         "id": 1,
-                        "img": "/images/basic/6/1.png",
-                        "video_url": "/videos/basic/6/1.mp4",
-                        "qupu_url": "/qupu/basic/6/1.gp5",
+                        "img": RES_HOST + "/courses/basic/6/images/1.jpg",
+                        "video_url": "/courses/basic/6/videos/1.mp4",
+                        "qupu_url": "/courses/basic/6/qupu/1.gp5",
                         "other": "xxxxxx"
                     },
                     {
                         "id": 2,
-                        "img": "/images/basic/6/2.png",
-                        "video_url": "/videos/basic/6/2.mp4",
-                        "qupu_url": "/qupu/basic/6/2.gp5",
+                        "img": RES_HOST + "/courses/basic/6/images/2.jpg",
+                        "video_url": "/courses/basic/6/videos/2.mp4",
+                        "qupu_url": "/courses/basic/6/qupu/2.gp5",
                         "other": "yyyy"
                     },
                     {
                         "id": 3,
-                        "img": "/images/basic/6/3.png",
-                        "video_url": "/videos/basic/6/3.mp4",
-                        "qupu_url": "/qupu/basic/6/3.gp5",
+                        "img": RES_HOST + "/courses/basic/6/images/3.jpg",
+                        "video_url": "/courses/basic/6/video/3.mp4",
+                        "qupu_url": "/courses/basic/6/3.gp5",
                         "other": "zzzz"
                     },
             ]
@@ -859,27 +864,27 @@ GetAllAdvancedCourses.prototype.onGet = function(req, res) {
                 "title": "扫弦",
                 "desc": "扫弦",
                 "count": 3,
-
+                "img": RES_HOST + "/courses/advanced/1/images/1.jpg",
                 "detail": [
                         {
                             "id": 1,
-                            "img": "/images/advanced/1/1.png",
-                            "video_url": "/videos/advanced/1/1.mp4",
-                            "qupu_url": "/qupu/advanced/1/1.gp5",
+                            "img": RES_HOST + "/courses/advanced/1/images/1.jpg",
+                            "video_url": RES_HOST + "/courses/advanced/1/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/courses/advanced/1/qupu/1.gp5",
                             "other": "xxxxxx"
                         },
                         {
                             "id": 2,
-                            "img": "/images/advanced/1/2.png",
-                            "video_url": "/videos/advanced/1/2.mp4",
-                            "qupu_url": "/qupu/advanced/1/2.gp5",
+                            "img": RES_HOST + "/courses/advanced/1/images/2.jpg",
+                            "video_url": RES_HOST + "/courses/advanced/1/videos/2.mp4",
+                            "qupu_url": RES_HOST + "/courses/advanced/1/qupu/2.gp5",
                             "other": "yyyy"
                         },
                         {
                             "id": 3,
-                            "img": "/images/advanced/1/3.png",
-                            "video_url": "/videos/advanced/1/3.mp4",
-                            "qupu_url": "/qupu/advanced/1/3.gp5",
+                            "img": RES_HOST + "/courses/advanced/1/images/3.jpg",
+                            "video_url": RES_HOST + "/courses/advanced/1/videos/3.mp4",
+                            "qupu_url": RES_HOST + "/courses/advanced/1/qupu/3.gp5",
                             "other": "zzzz"
                         },
                 ]
@@ -890,27 +895,28 @@ GetAllAdvancedCourses.prototype.onGet = function(req, res) {
                 "title": "分解和弦",
                 "desc": "分解和弦",
                 "count": 3,
+                "img": RES_HOST + "/courses/advanced/2/images/1.jpg",
 
                 "detail": [
                         {
                             "id": 1,
-                            "img": "/images/advanced/2/1.png",
-                            "video_url": "/videos/advanced/2/1.mp4",
-                            "qupu_url": "/qupu/advanced/2/1.gp5",
+                            "img": RES_HOST + "/courses/advanced/2/images/1.jpg",
+                            "video_url": RES_HOST + "/courses/advanced/2/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/courses/advanced/2/qupu/1.gp5",
                             "other": "xxxxxx"
                         },
                         {
                             "id": 2,
-                            "img": "/images/advanced/2/2.png",
-                            "video_url": "/videos/advanced/2/2.mp4",
-                            "qupu_url": "/qupu/advanced/2/2.gp5",
+                            "img": RES_HOST + "/courses/advanced/2/images/2.jpg",
+                            "video_url": RES_HOST + "/courses/advanced/2/videos/2.mp4",
+                            "qupu_url": RES_HOST + "/courses/advanced/2/qupu/2.gp5",
                             "other": "yyyy"
                         },
                         {
                             "id": 3,
-                            "img": "/images/advanced/2/3.png",
-                            "video_url": "/videos/advanced/2/3.mp4",
-                            "qupu_url": "/qupu/advanced/2/3.gp5",
+                            "img": RES_HOST + "/courses/advanced/2/images/3.jpg",
+                            "video_url": RES_HOST + "/courses/advanced/2/videos/3.mp4",
+                            "qupu_url": RES_HOST + "/courses/advanced/2/qupu/3.gp5",
                             "other": "zzzz"
                         },
                 ]
@@ -921,27 +927,27 @@ GetAllAdvancedCourses.prototype.onGet = function(req, res) {
                 "title": "击勾弦",
                 "desc": "击勾弦",
                 "count": 3,
-
+                "img": RES_HOST + "/courses/advanced/3/images/1.jpg",
                 "detail": [
                         {
                             "id": 1,
-                            "img": "/images/advanced/3/1.png",
-                            "video_url": "/videos/advanced/3/1.mp4",
-                            "qupu_url": "/qupu/advanced/3/1.gp5",
+                            "img": RES_HOST + "/courses/advanced/3/images/1.jpg",
+                            "video_url": RES_HOST + "/courses/advanced/3/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/courses/advanced/3/qupu/1.gp5",
                             "other": "xxxxxx"
                         },
                         {
                             "id": 2,
-                            "img": "/images/advanced/3/2.png",
-                            "video_url": "/videos/advanced/3/2.mp4",
-                            "qupu_url": "/qupu/advanced/3/2.gp5",
+                            "img": RES_HOST + "/courses/advanced/3/images/2.jpg",
+                            "video_url": RES_HOST + "/courses/advanced/3/videos/2.mp4",
+                            "qupu_url": RES_HOST + "/courses/advanced/3/qupu/2.gp5",
                             "other": "yyyy"
                         },
                         {
                             "id": 3,
-                            "img": "/images/advanced/3/3.png",
-                            "video_url": "/videos/advanced/3/3.mp4",
-                            "qupu_url": "/qupu/advanced/3/3.gp5",
+                            "img": RES_HOST + "/courses/advanced/3/images/3.jpg",
+                            "video_url": RES_HOST + "/courses/advanced/3/videos/3.mp4",
+                            "qupu_url": RES_HOST + "/courses/advanced/3/qupu/3.gp5",
                             "other": "zzzz"
                         },
                 ]
@@ -952,27 +958,27 @@ GetAllAdvancedCourses.prototype.onGet = function(req, res) {
                 "title": "切音",
                 "desc": "切音",
                 "count": 3,
-
+                "img": RES_HOST + "/courses/advanced/4/images/1.jpg",
                 "detail": [
                         {
                             "id": 1,
-                            "img": "/images/advanced/4/1.png",
-                            "video_url": "/videos/advanced/4/1.mp4",
-                            "qupu_url": "/qupu/advanced/4/1.gp5",
+                            "img": RES_HOST + "/courses/advanced/4/images/1.jpg",
+                            "video_url": RES_HOST + "/courses/advanced/4/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/courses/advanced/4/qupu/1.gp5",
                             "other": "xxxxxx"
                         },
                         {
                             "id": 2,
-                            "img": "/images/advanced/4/2.png",
-                            "video_url": "/videos/advanced/4/2.mp4",
-                            "qupu_url": "/qupu/advanced/4/2.gp5",
+                            "img": RES_HOST + "/courses/advanced/4/images/2.jpg",
+                            "video_url": RES_HOST + "/courses/advanced/4/videos/2.mp4",
+                            "qupu_url": RES_HOST + "/courses/advanced/4/qupu/2.gp5",
                             "other": "yyyy"
                         },
                         {
                             "id": 3,
-                            "img": "/images/advanced/4/3.png",
-                            "video_url": "/videos/advanced/4/3.mp4",
-                            "qupu_url": "/qupu/advanced/4/3.gp5",
+                            "img": RES_HOST + "/courses/advanced/4/images/3.jpg",
+                            "video_url": RES_HOST + "/courses/advanced/4/videos/3.mp4",
+                            "qupu_url": RES_HOST + "/courses/advanced/4/qupu/3.gp5",
                             "other": "zzzz"
                         },
                 ]
@@ -983,27 +989,27 @@ GetAllAdvancedCourses.prototype.onGet = function(req, res) {
                 "title": "泛音",
                 "desc": "泛音",
                 "count": 3,
-
+                "img": RES_HOST + "/courses/advanced/5/images/1.jpg",
                 "detail": [
                         {
                             "id": 1,
-                            "img": "/images/advanced/5/1.png",
-                            "video_url": "/videos/advanced/5/1.mp4",
-                            "qupu_url": "/qupu/advanced/5/1.gp5",
+                            "img": RES_HOST + "/courses/advanced/5/images/1.jpg",
+                            "video_url": RES_HOST + "/courses/advanced/5/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/courses/advanced/5/qupu/1.gp5",
                             "other": "xxxxxx"
                         },
                         {
                             "id": 2,
-                            "img": "/images/advanced/5/2.png",
-                            "video_url": "/videos/advanced/5/2.mp4",
-                            "qupu_url": "/qupu/advanced/5/2.gp5",
+                            "img": RES_HOST + "/courses/advanced/5/images/2.jpg",
+                            "video_url": RES_HOST + "/courses/advanced/5/videos/2.mp4",
+                            "qupu_url": RES_HOST + "/courses/advanced/5/qupu/2.gp5",
                             "other": "yyyy"
                         },
                         {
                             "id": 3,
-                            "img": "/images/advanced/5/3.png",
-                            "video_url": "/videos/advanced/5/3.mp4",
-                            "qupu_url": "/qupu/advanced/5/3.gp5",
+                            "img": RES_HOST + "/courses/advanced/5/images/3.jpg",
+                            "video_url": RES_HOST + "/courses/advanced/5/videos/3.mp4",
+                            "qupu_url": RES_HOST + "/courses/advanced/5/qupu/3.gp5",
                             "other": "zzzz"
                         },
                 ]
@@ -1014,27 +1020,27 @@ GetAllAdvancedCourses.prototype.onGet = function(req, res) {
                 "title": "滑音",
                 "desc": "滑音",
                 "count": 3,
-
+                "img": RES_HOST + "/courses/advanced/6/images/1.jpg",
                 "detail": [
                         {
                             "id": 1,
-                            "img": "/images/advanced/6/1.png",
-                            "video_url": "/videos/advanced/6/1.mp4",
-                            "qupu_url": "/qupu/advanced/6/1.gp5",
+                            "img": RES_HOST + "/courses/advanced/6/images/1.jpg",
+                            "video_url": RES_HOST + "/courses/advanced/6/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/courses/advanced/6/qupu/1.gp5",
                             "other": "xxxxxx"
                         },
                         {
                             "id": 2,
-                            "img": "/images/advanced/6/2.png",
-                            "video_url": "/videos/advanced/6/2.mp4",
-                            "qupu_url": "/qupu/advanced/6/2.gp5",
+                            "img": RES_HOST + "/courses/advanced/6/images/2.jpg",
+                            "video_url": RES_HOST + "/courses/advanced/6/videos/2.mp4",
+                            "qupu_url": RES_HOST + "/courses/advanced/6/qupu/2.gp5",
                             "other": "yyyy"
                         },
                         {
                             "id": 3,
-                            "img": "/images/advanced/6/3.png",
-                            "video_url": "/videos/advanced/6/3.mp4",
-                            "qupu_url": "/qupu/advanced/6/3.gp5",
+                            "img": RES_HOST + "/courses/advanced/6/images/3.jpg",
+                            "video_url": RES_HOST + "/courses/advanced/6/videos/3.mp4",
+                            "qupu_url": RES_HOST + "/courses/advanced/6/qupu/3.gp5",
                             "other": "zzzz"
                         },
                 ]
@@ -1078,9 +1084,9 @@ GetSomeQupu.prototype.onGet = function(req, res) {
 
                 "detail": 
                 {
-                            "img": "/images/advanced/1/1.png",
-                            "video_url": "/videos/advanced/1/1.mp4",
-                            "qupu_url": "/qupu/advanced/1/1.gp5",
+                            "img": RES_HOST + "/qupu/advanced/1/images/1.jpg",
+                            "video_url": RES_HOST + "/qupu/advanced/1/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/qupu/advanced/1/qupu/1.gp5",
                             "other": "xxxxxx"
                 },
             },
@@ -1093,9 +1099,9 @@ GetSomeQupu.prototype.onGet = function(req, res) {
 
                 "detail": 
                 {
-                            "img": "/images/advanced/2/1.png",
-                            "video_url": "/videos/advanced/2/1.mp4",
-                            "qupu_url": "/qupu/advanced/2/1.gp5",
+                            "img": RES_HOST + "/qupu/advanced/2/images/1.jpg",
+                            "video_url": RES_HOST + "/qupu/advanced/2/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/qupu/advanced/2/qupu/1.gp5",
                             "other": "xxxxxx"
                 },
             },
@@ -1107,9 +1113,9 @@ GetSomeQupu.prototype.onGet = function(req, res) {
 
                 "detail": 
                 {
-                            "img": "/images/advanced/3/1.png",
-                            "video_url": "/videos/advanced/3/1.mp4",
-                            "qupu_url": "/qupu/advanced/3/1.gp5",
+                            "img": RES_HOST + "/qupu/advanced/3/images/1.jpg",
+                            "video_url": RES_HOST + "/qupu/advanced/3/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/qupu/advanced/3/qupu/1.gp5",
                             "other": "xxxxxx"
                 }
             }
@@ -1151,9 +1157,9 @@ SearchQupu.prototype.onGet = function(req, res) {
                 "desc": "青春舞曲（简单版）",
                 "detail":
                 {
-                            "img": "/images/advanced/1/1.png",
-                            "video_url": "/videos/advanced/1/1.mp4",
-                            "qupu_url": "/qupu/advanced/1/1.gp5",
+                            "img": RES_HOST + "/qupu/basic/1/images/1.png",
+                            "video_url": RES_HOST + "/qupu/basic/1/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/qupu/basic/1/qupu/1.gp5",
                             "other": "xxxxxx"
                 }
             },
@@ -1165,36 +1171,36 @@ SearchQupu.prototype.onGet = function(req, res) {
 
                 "detail": 
                 {
-                            "img": "/images/advanced/2/1.png",
-                            "video_url": "/videos/advanced/2/1.mp4",
-                            "qupu_url": "/qupu/advanced/2/1.gp5",
+                            "img": RES_HOST + "/qupu/advanced/2/images/1.png",
+                            "video_url": RES_HOST + "/qupu/advanced/2/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/qupu/advanced/2/qupu/1.gp5",
                             "other": "xxxxxx"
                 },
             },
             {
                 "id": 3,
-                "type": "advanced",
+                "type": "hard",
                 "title": "青春舞曲",
                 "desc": "青春舞曲（高级版）",
 
                 "detail":
                 {
-                            "img": "/images/advanced/3/1.png",
-                            "video_url": "/videos/advanced/3/1.mp4",
-                            "qupu_url": "/qupu/advanced/3/1.gp5",
+                            "img": RES_HOST + "/qupu/hard/3/images/1.png",
+                            "video_url": RES_HOST + "/qupu/hard/3/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/qupu/hard/3/qupu/1.gp5",
                             "other": "xxxxxx"
                 },
             },
             {
                 "id": 4,
-                "type": "advanced",
+                "type": "customed",
                 "title": "青春舞曲",
                 "desc": "青春舞曲（网友整理）",
                 "detail": 
                 {
-                            "img": "/images/advanced/4/1.png",
-                            "video_url": "/videos/advanced/4/1.mp4",
-                            "qupu_url": "/qupu/advanced/4/1.gp5",
+                            "img": RES_HOST + "/qupu/customed/4/images/1.png",
+                            "video_url": RES_HOST + "/qupu/customed/4/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/qupu/customed/4/qupu/1.gp5",
                             "other": "xxxxxx"
                 },
             },
