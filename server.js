@@ -1215,6 +1215,100 @@ SearchQupu.prototype.onPost = function(req, res) {
     return this.respond(req, res, 400);
 }
 
+/* get one course */
+var GetCourse = function() {
+}
+
+GetCourse.prototype = new HttpReqHandler();
+
+GetCourse.prototype.onGet = function(req, res) {
+      var headers;
+      headers = {
+        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization, Accept*, X-Requested-With",
+        "Content-Type": "application/json"
+      };
+      res.writeHead(200, headers);
+
+      var course = {
+            "id": 1,
+            "type": "basic",
+            "title": "第一课",
+            "desc": "基础知识",
+            "count": 3,
+            "img": RES_HOST + "/courses/basic/1/images/1.jpg",
+            "detail": [
+                    {
+                        "id": 1,
+                        "img": RES_HOST + "/courses/basic/1/images/1.jpg",
+                        "video_url": RES_HOST + "/courses/basic/1/videos/1.mp4",
+                        "qupu_url": RES_HOST + "/courses/basic/1/qupu/1.gp5",
+                        "other":  "xxxxxx"
+                    },
+                    {
+                        "id": 2,
+                        "img": RES_HOST + "/courses/basic/1/images/2.jpg",
+                        "video_url": RES_HOST + "/courses/basic/1/videos/2.mp4",
+                        "qupu_url": RES_HOST + "/courses/basic/1/qupu/2.gp5",
+                        "other": "yyyy"
+                    },
+                    {
+                        "id": 3,
+                        "img": RES_HOST + "/courses/basic/1/images/3.jpg",
+                        "video_url": RES_HOST + "/courses/basic/1/video/3.mp4",
+                        "qupu_url": RES_HOST + "/courses/basic/1/3.gp5",
+                        "other": "zzzz"
+                    },
+            ]
+      };
+
+      res.write(JSON.stringify(course));
+      return res.end();
+}
+
+GetCourse.prototype.onPost = function(req, res) {
+    return this.respond(req, res, 400);
+}
+
+/* get one qupu */
+var GetQupu = function() {
+}
+
+GetQupu.prototype = new HttpReqHandler();
+
+GetQupu.prototype.onGet = function(req, res) {
+      var headers;
+      headers = {
+        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization, Accept*, X-Requested-With",
+        "Content-Type": "application/json"
+      };
+      res.writeHead(200, headers);
+
+      var qupu = {
+                "id": 1,
+                "type": "basic",
+                "title": "青春舞曲",
+                "desc": "青春舞曲（简单版）",
+                "detail":
+                {
+                            "img": RES_HOST + "/qupu/basic/1/images/1.jpg",
+                            "video_url": RES_HOST + "/qupu/basic/1/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/qupu/basic/1/qupu/1.gp5",
+                            "other": "xxxxxx"
+                }
+      };
+
+      res.write(JSON.stringify(qupu));
+      return res.end();
+}
+
+GetQupu.prototype.onPost = function(req, res) {
+    return this.respond(req, res, 400);
+}
+
 // add route handler
 function addRoute(path, handler) {
     routes.push({
@@ -1275,11 +1369,17 @@ var getAllAdvancedCourses = new GetAllAdvancedCourses(); // get advanced courses
 var getSomeQupu = new GetSomeQupu(); // get some qupu
 var searchQupu = new SearchQupu(); // search some qupu
 
+var getCourse = new GetCourse(); // get some qupu
+var getQupu = new GetQupu(); // search some qupu
+
 addRoute(/\/v1\/courses\/basic$/, getAllBasicCourses); // for '/v1/courses/basic'
 addRoute(/\/v1\/courses\/advanced$/, getAllAdvancedCourses); // for '/v1/courses/advanced'
 
-addRoute(/\/v1\/qupu$/, getSomeQupu); // for '/v1/qupu/'
-addRoute(/\/v1\/qupu\/search/, searchQupu); // for '/v1/courses/search'
+addRoute(/\/v1\/qupus$/, getSomeQupu); // for '/v1/qupu/'
+addRoute(/\/v1\/qupus\/search/, searchQupu); // for '/v1/courses/search'
+
+addRoute(/\/v1\/course$/, getCourse); // for '/v1/qupu/'
+addRoute(/\/v1\/qupu$/, getQupu); // for '/v1/courses/search'
 
 // Now, create http server
 http.createServer(function (request, response) {
