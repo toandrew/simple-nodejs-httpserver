@@ -642,7 +642,7 @@ GetAllBasicCourses.prototype.onGet = function(req, res) {
             "id": 1,
             "type": "basic",
             "title": "第一课",
-            "desc": "基础知识",
+            "desc": "xxxx",
             "count": 3,
             "img": RES_HOST + "/courses/basic/1/images/1.jpg",
             "detail": [
@@ -673,7 +673,7 @@ GetAllBasicCourses.prototype.onGet = function(req, res) {
             "id": 2,
             "type": "basic",
             "title": "第二课",
-            "desc": "Em和弦",
+            "desc": "xxxx",
             "count": 3,
             "img": RES_HOST + "/courses/basic/2/images/1.jpg",
             "detail": [
@@ -704,7 +704,7 @@ GetAllBasicCourses.prototype.onGet = function(req, res) {
             "id": 3,
             "type": "basic",
             "title": "第三课",
-            "desc": "Em和弦练习",
+            "desc": "xxx",
             "count": 3,
             "img": RES_HOST + "/courses/basic/3/images/1.jpg",
             "detail": [
@@ -735,7 +735,7 @@ GetAllBasicCourses.prototype.onGet = function(req, res) {
             "id": 4,
             "type": "basic",
             "title": "第四课",
-            "desc": "Am和弦",
+            "desc": "xxx",
             "count": 3,
             "img": RES_HOST + "/courses/basic/4/images/1.jpg",
             "detail": [
@@ -766,7 +766,7 @@ GetAllBasicCourses.prototype.onGet = function(req, res) {
             "id": 5,
             "type": "basic",
             "title": "第五课",
-            "desc": "Em-Am和弦转换",
+            "desc": "xxxx",
             "count": 3,
             "img": RES_HOST + "/courses/basic/5/images/1.jpg",
 
@@ -798,7 +798,7 @@ GetAllBasicCourses.prototype.onGet = function(req, res) {
             "id": 6,
             "type": "basic",
             "title": "第六课",
-            "desc": "演奏全曲",
+            "desc": "xxxx",
             "count": 3,
 
             "img": RES_HOST + "/courses/basic/6/images/1.jpg",
