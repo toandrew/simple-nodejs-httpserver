@@ -1235,7 +1235,7 @@ GetCourse.prototype.onGet = function(req, res) {
             "id": 1,
             "type": "basic",
             "title": "第一课",
-            "desc": "基础知识",
+            "desc": "xxxx",
             "count": 3,
             "img": RES_HOST + "/courses/basic/1/images/1.jpg",
             "detail": [
@@ -1244,22 +1244,28 @@ GetCourse.prototype.onGet = function(req, res) {
                         "img": RES_HOST + "/courses/basic/1/images/1.jpg",
                         "video_url": RES_HOST + "/courses/basic/1/videos/1.mp4",
                         "qupu_url": RES_HOST + "/courses/basic/1/qupu/1.gp5",
-                        "other":  "xxxxxx"
+                        "title":  "基础知识",
+                        "info" : "xxxxx",
+                        "type" : "piece"
                     },
                     {
                         "id": 2,
                         "img": RES_HOST + "/courses/basic/1/images/2.jpg",
                         "video_url": RES_HOST + "/courses/basic/1/videos/2.mp4",
                         "qupu_url": RES_HOST + "/courses/basic/1/qupu/2.gp5",
-                        "other": "yyyy"
+                        "title": "演奏全曲",
+                        "info" : "yyyyy",
+                        "type" : "full"
                     },
                     {
                         "id": 3,
                         "img": RES_HOST + "/courses/basic/1/images/3.jpg",
                         "video_url": RES_HOST + "/courses/basic/1/video/3.mp4",
                         "qupu_url": RES_HOST + "/courses/basic/1/3.gp5",
-                        "other": "zzzz"
-                    },
+                        "title": "解锁曲目",
+                        "info" : "zzzz",
+                        "type" : "more"
+                    }
             ]
       };
 
