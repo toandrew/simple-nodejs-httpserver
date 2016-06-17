@@ -1245,8 +1245,10 @@ GetCourse.prototype.onGet = function(req, res) {
                         "video_url": RES_HOST + "/courses/basic/1/videos/1.mp4",
                         "qupu_url": RES_HOST + "/courses/basic/1/qupu/1.gp5",
                         "title":  "基础知识",
-                        "info" : "xxxxx",
-                        "type" : "piece"
+                        "info" : "基础知识－重点文字展示",
+                        "other": "xxxx",
+                        "type" : "normal",
+                        "tracks": 3
                     },
                     {
                         "id": 2,
@@ -1254,8 +1256,10 @@ GetCourse.prototype.onGet = function(req, res) {
                         "video_url": RES_HOST + "/courses/basic/1/videos/2.mp4",
                         "qupu_url": RES_HOST + "/courses/basic/1/qupu/2.gp5",
                         "title": "演奏全曲",
-                        "info" : "yyyyy",
-                        "type" : "full"
+                        "info" : "演奏全曲－重点文字展示",
+                        "other": "yyyy",
+                        "type" : "full",
+                        "tracks": 3
                     },
                     {
                         "id": 3,
@@ -1263,8 +1267,10 @@ GetCourse.prototype.onGet = function(req, res) {
                         "video_url": RES_HOST + "/courses/basic/1/video/3.mp4",
                         "qupu_url": RES_HOST + "/courses/basic/1/3.gp5",
                         "title": "解锁曲目",
-                        "info" : "zzzz",
-                        "type" : "more"
+                        "info" : "解锁曲目-重点文字展示",
+                        "other": "zzzz",
+                        "type" : "more",
+                        "tracks": 3
                     }
             ]
       };
@@ -1384,8 +1390,8 @@ addRoute(/\/v1\/courses\/advanced$/, getAllAdvancedCourses); // for '/v1/courses
 addRoute(/\/v1\/qupus$/, getSomeQupu); // for '/v1/qupu/'
 addRoute(/\/v1\/qupus\/search/, searchQupu); // for '/v1/courses/search'
 
-addRoute(/\/v1\/course$/, getCourse); // for '/v1/qupu/'
-addRoute(/\/v1\/qupu$/, getQupu); // for '/v1/courses/search'
+addRoute(/\/v1\/course/, getCourse); // for '/v1/qupu/'
+addRoute(/\/v1\/qupu/, getQupu); // for '/v1/courses/search'
 
 // Now, create http server
 http.createServer(function (request, response) {
