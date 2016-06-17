@@ -1310,7 +1310,7 @@ GetQupu.prototype.onGet = function(req, res) {
                             "video_url": RES_HOST + "/qupu/basic/1/videos/1.mp4",
                             "qupu_url": RES_HOST + "/qupu/basic/1/qupu/1.gp5",
                             "other": "xxxxxx",
-                            "tracks": 3
+                            "tracks": 0
                 }
       };
 
