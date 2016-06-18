@@ -1284,12 +1284,24 @@ GetCourse.prototype.onGet = function(req, res) {
                         "parts": [
                             {
                                 "video_url": RES_HOST + "/courses/basic/1/videos/1.mp4",
-                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/1.gp5",
                                 "title":  "Em和弦-1",
                                 "info" : "Em和弦－重点文字展示-1",
                                 "other": "xxxx",
                                 "type" : "normal",
-                                "tracks": 3
+                                "tracks": 3,
+                                "img_count": 2,
+                                "images": [
+                                    {
+                                        "url": RES_HOST + "/courses/basic/1/images/em_u24.png",
+                                        "time":"00:10",
+                                        "duration": 10
+                                    },
+                                    {
+                                        "url": RES_HOST + "/courses/basic/1/images/em_u26.png",
+                                        "time":"00:10",
+                                        "duration": 10
+                                    }
+                                ]
                             },
                             {
                                 "video_url": RES_HOST + "/courses/basic/1/videos/2.mp4",
