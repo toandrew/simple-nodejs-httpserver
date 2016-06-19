@@ -1520,6 +1520,84 @@ GetQupu.prototype.onPost = function(req, res) {
     return this.respond(req, res, 400);
 }
 
+
+var GetUnlockedQupu = function() {
+}
+
+GetUnlockedQupu.prototype = new HttpReqHandler();
+
+GetUnlockedQupu.prototype.onGet = function(req, res) {
+      var headers;
+      headers = {
+        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization, Accept*, X-Requested-With",
+        "Content-Type": "application/json"
+      };
+      res.writeHead(200, headers);
+
+     var unlockedQupu = {
+       "count": 3,
+
+        "info": 
+        [
+            {
+                "id": 1,
+                "type": "basic",
+                "title": "天空之城",
+                "desc": "天空之城",
+
+                "detail": 
+                {
+                            "img": RES_HOST + "/courses/basic/4/images/1.jpg",
+                            "video_url": RES_HOST + "/qupu/advanced/1/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/qupu/advanced/1/qupu/1.gp5",
+                            "other": "xxxxxx"
+                },
+            },
+            {
+                "id": 2,
+                "type": "basic",
+                "title": "童年",
+                "desc": "童年",
+                "count": 3,
+
+                "detail": 
+                {
+                     "img": RES_HOST + "/qupu/advanced/3/images/1.jpg",
+                            
+                            "video_url": RES_HOST + "/qupu/advanced/2/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/qupu/advanced/2/qupu/1.gp5",
+                            "other": "xxxxxx"
+                },
+            },
+            {
+                "id": 3,
+                "type": "basic",
+                "title": "月半小夜曲",
+                "desc": "月半小夜曲",
+
+                "detail": 
+                {
+                    "img": RES_HOST + "/courses/basic/5/images/1.jpg",
+                           
+                            "video_url": RES_HOST + "/qupu/advanced/3/videos/1.mp4",
+                            "qupu_url": RES_HOST + "/qupu/advanced/3/qupu/1.gp5",
+                            "other": "xxxxxx"
+                }
+            }
+        ]
+      };
+
+      res.write(JSON.stringify(unlockedQupu));
+      return res.end();
+}
+
+GetUnlockedQupu.prototype.onPost = function(req, res) {
+    return this.respond(req, res, 400);
+}
+
+
 // add route handler
 function addRoute(path, handler) {
     routes.push({
@@ -1583,6 +1661,8 @@ var searchQupu = new SearchQupu(); // search some qupu
 var getCourse = new GetCourse(); // get some qupu
 var getQupu = new GetQupu(); // search some qupu
 
+var getUnlockedQupu = new GetUnlockedQupu(); // search some qupu
+
 addRoute(/\/v1\/courses\/basic$/, getAllBasicCourses); // for '/v1/courses/basic'
 addRoute(/\/v1\/courses\/advanced$/, getAllAdvancedCourses); // for '/v1/courses/advanced'
 
@@ -1591,6 +1671,8 @@ addRoute(/\/v1\/qupus\/search/, searchQupu); // for '/v1/courses/search'
 
 addRoute(/\/v1\/course/, getCourse); // for '/v1/qupu/'
 addRoute(/\/v1\/qupu/, getQupu); // for '/v1/courses/search'
+
+addRoute(/\/v1\/unlocked\/qupu/, getUnlockedQupu); // for '/v1/courses/search'
 
 // Now, create http server
 http.createServer(function (request, response) {
