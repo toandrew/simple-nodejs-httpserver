@@ -635,7 +635,7 @@ GetAllBasicCourses.prototype.onGet = function(req, res) {
       res.writeHead(200, headers);
 
       var allBasicCourses = {
-        "count": 6,
+        "count": 1,
 
         "info": [
         {
@@ -669,6 +669,7 @@ GetAllBasicCourses.prototype.onGet = function(req, res) {
                     },
             ]
         },
+        /*
         {
             "id": 2,
             "type": "basic",
@@ -827,6 +828,7 @@ GetAllBasicCourses.prototype.onGet = function(req, res) {
                     },
             ]
         },
+        */
         ]
       };
 
