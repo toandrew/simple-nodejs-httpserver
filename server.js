@@ -644,11 +644,11 @@ GetAllBasicCourses.prototype.onGet = function(req, res) {
             "title": "第一课",
             "desc": "xxxx",
             "count": 3,
-            "img": RES_HOST + "/courses/basic/1/images/1.jpg",
+            "img": RES_HOST + "/courses/basic/1/images/cover/1.jpg",
             "detail": [
                     {
                         "id": 1,
-                        "img": RES_HOST + "/courses/basic/1/images/1.jpg",
+                        "img": RES_HOST + "/courses/basic/1/images/cover/1.jpg",
                         "video_url": RES_HOST + "/courses/basic/1/videos/1.mp4",
                         "qupu_url": RES_HOST + "/courses/basic/1/qupu/1.gp5",
                         "other":  "xxxxxx"
@@ -1237,43 +1237,24 @@ GetCourse.prototype.onGet = function(req, res) {
             "id": 1,
             "type": "basic",
             "title": "第一课",
-            "desc": "xxxx",
-            "count": 7,
-            "img": RES_HOST + "/courses/basic/1/images/1.jpg",
+            "desc": "基础知识，Em, Am",
+            "count": 9,
+            "img": RES_HOST + "/courses/basic/1/images/cover/1.jpg",
             "detail": [
                     {
                         "id": 1,
-                        "title":  "基础知识",
-                        "img": RES_HOST + "/courses/basic/1/images/1.jpg",
-                        "pcount": 3,
+                        "title":  "新手入门",
+                        "img": RES_HOST + "/courses/basic/1/images/cover/1.jpg",
+                        "pcount": 1,
                         "parts": [
                             {
-                                "video_url": RES_HOST + "/courses/basic/1/videos/1.mp4",
-                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/1.gp5",
-                                "title":  "基础知识-1",
-                                "info" : "基础知识－重点文字展示-1",
+                                "video_url": RES_HOST + "/courses/basic/1/videos/1_0.mp4",
+                                /*"qupu_url": RES_HOST + "/courses/basic/1/qupu/2.gp5",*/
+                                "title":  "新手入门",
+                                "info" : "新手入门－重点文字展示-1",
                                 "other": "xxxx",
                                 "type" : "normal",
-                                "tracks": 3
-                            },
-                            {
-                                "video_url": RES_HOST + "/courses/basic/1/videos/2.mp4",
-                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/2.gp5",
-                                "title":  "基础知识-2",
-                                "info" : "基础知识－重点文字展示-2",
-                                "other": "xxxx",
-                                "type" : "normal",
-                                "tracks": 3
-                            },
-
-                            {
-                                "video_url": RES_HOST + "/courses/basic/1/videos/3.mp4",
-                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/3.gp5",
-                                "title":  "基础知识-3",
-                                "info" : "基础知识－重点文字展示-3",
-                                "other": "xxxx",
-                                "type" : "normal",
-                                "tracks": 3
+                                "tracks": 1
                             },
                         ]
                     },
@@ -1281,45 +1262,70 @@ GetCourse.prototype.onGet = function(req, res) {
                     {
                         "id": 2,
                         "title":  "Em和弦",
-                        "img": RES_HOST + "/courses/basic/1/images/1.jpg",
-                        "pcount": 3,
+                        "img": RES_HOST + "/courses/basic/1/images/cover/1.jpg",
+                        "pcount": 5,
                         "parts": [
                             {
-                                "video_url": RES_HOST + "/courses/basic/1/videos/1.mp4",
-                                "title":  "Em和弦-1",
-                                "info" : "Em和弦－重点文字展示-1",
+                                "video_url": RES_HOST + "/courses/basic/1/videos/1_1.mp4",
+                                "title":  "Em指法",
+                                "info" : "Em指法－重点文字展示-1",
+                                "other": "xxxx",
+                                "type" : "normal",
+                                "tracks": 0,
+                            },
+                            {
+                                "video_url": RES_HOST + "/courses/basic/1/videos/1_2.mp4",
+                                /*"qupu_url": RES_HOST + "/courses/basic/1/qupu/2.gp5",*/
+                                "title":  "Em琶音示范",
+                                "info" : "Em琶音示范－重点文字展示-2",
                                 "other": "xxxx",
                                 "type" : "normal",
                                 "tracks": 3,
-                                "img_count": 2,
+                                "img_count": 1,
                                 "images": [
                                     {
-                                        "url": RES_HOST + "/courses/basic/1/images/em_u24.png",
+                                        "url": RES_HOST + "/courses/basic/1/images/Em.png",
                                         "time":"00:10",
                                         "duration": 10
                                     },
-                                    {
-                                        "url": RES_HOST + "/courses/basic/1/images/em_u26.png",
-                                        "time":"00:10",
-                                        "duration": 10
-                                    }
                                 ]
+
                             },
+
                             {
-                                "video_url": RES_HOST + "/courses/basic/1/videos/2.mp4",
-                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/2.gp5",
-                                "title":  "Em和弦-2",
-                                "info" : "Em和弦－重点文字展示-2",
+                                "video_url": RES_HOST + "/courses/basic/1/videos/1_3.mp4",
+                                /*"qupu_url": RES_HOST + "/courses/basic/1/qupu/3.gp5",*/
+                                "title":  "Em注意事项",
+                                "info" : "Em注意事项－重点文字展示-3",
                                 "other": "xxxx",
                                 "type" : "normal",
                                 "tracks": 3
                             },
 
                             {
-                                "video_url": RES_HOST + "/courses/basic/1/videos/3.mp4",
-                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/3.gp5",
-                                "title":  "Em和弦-3",
-                                "info" : "Em和弦－重点文字展示-3",
+                                "video_url": RES_HOST + "/courses/basic/1/videos/1_4.mp4",
+                                /*"qupu_url": RES_HOST + "/courses/basic/1/qupu/3.gp5",*/
+                                "title":  "Em错误示范",
+                                "info" : "Em错误示范－重点文字展示-3",
+                                "other": "xxxx",
+                                "type" : "normal",
+                                "tracks": 3,
+                                "img_count": 1,
+                                "images": [
+                                    {
+                                        "url": RES_HOST + "/courses/basic/1/images/Error.png",
+                                        "time":"00:10",
+                                        "duration": 10
+                                    },
+                                ]
+                            },
+
+
+                            {
+                                "video_url": RES_HOST + "/courses/basic/1/videos/1_5.mp4",
+                                /*"qupu_url": RES_HOST + "/courses/basic/1/qupu/3.gp5",*/
+                                "title":  "Em引导演奏",
+                                "info" : "Em引导演奏－重点文字展示-3",
                                 "other": "xxxx",
                                 "type" : "normal",
                                 "tracks": 3
@@ -1331,32 +1337,14 @@ GetCourse.prototype.onGet = function(req, res) {
                         "id": 3,
                         "title":  "Em和弦练习",
                         "img": RES_HOST + "/courses/basic/1/images/1.jpg",
-                        "pcount": 3,
+                        "pcount": 1,
                         "parts": [
-                            {
-                                "video_url": RES_HOST + "/courses/basic/1/videos/1.mp4",
-                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/1.gp5",
-                                "title":  "Em和弦练习-1",
-                                "info" : "Em和弦练习－重点文字展示-1",
-                                "other": "xxxx",
-                                "type" : "normal",
-                                "tracks": 3
-                            },
-                            {
-                                "video_url": RES_HOST + "/courses/basic/1/videos/2.mp4",
-                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/2.gp5",
-                                "title":  "Em和弦练习-2",
-                                "info" : "Em和弦练习－重点文字展示-2",
-                                "other": "xxxx",
-                                "type" : "normal",
-                                "tracks": 3
-                            },
 
                             {
-                                "video_url": RES_HOST + "/courses/basic/1/videos/3.mp4",
-                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/3.gp5",
-                                "title":  "Em和弦练习-3",
-                                "info" : "Em和弦练习－重点文字展示-3",
+                                "video_url": RES_HOST + "/courses/basic/1/videos/1_6.mp4",
+                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/1.gp5",
+                                "title":  "Em练习曲",
+                                "info" : "Em练习曲－重点文字展示-3",
                                 "other": "xxxx",
                                 "type" : "normal",
                                 "tracks": 3
@@ -1368,32 +1356,68 @@ GetCourse.prototype.onGet = function(req, res) {
                         "id": 4,
                         "title":  "Am和弦",
                         "img": RES_HOST + "/courses/basic/1/images/1.jpg",
-                        "pcount": 3,
+                        "pcount": 5,
                         "parts": [
                             {
-                                "video_url": RES_HOST + "/courses/basic/1/videos/1.mp4",
-                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/1.gp5",
-                                "title":  "Am和弦-1",
-                                "info" : "基Am和弦－重点文字展示-1",
+                                "video_url": RES_HOST + "/courses/basic/1/videos/2_1.mp4",
+                                /*"qupu_url": RES_HOST + "/courses/basic/1/qupu/1.gp5",*/
+                                "title":  "Am指法",
+                                "info" : "Am指法－重点文字展示-1",
                                 "other": "xxxx",
                                 "type" : "normal",
-                                "tracks": 3
+                                "tracks": 3,
+                                "img_count": 1,
+                                "images": [
+                                    {
+                                        "url": RES_HOST + "/courses/basic/1/images/Am.png",
+                                        "time":"00:10",
+                                        "duration": 10
+                                    },
+                                ]
                             },
                             {
-                                "video_url": RES_HOST + "/courses/basic/1/videos/2.mp4",
-                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/2.gp5",
-                                "title":  "Am和弦-2",
-                                "info" : "Am和弦－重点文字展示-2",
+                                "video_url": RES_HOST + "/courses/basic/1/videos/2_2.mp4",
+                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/1.gp5",
+                                "title":  "Am注意事项",
+                                "info" : "Am注意事项－重点文字展示-1",
                                 "other": "xxxx",
                                 "type" : "normal",
                                 "tracks": 3
                             },
 
                             {
-                                "video_url": RES_HOST + "/courses/basic/1/videos/3.mp4",
-                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/3.gp5",
-                                "title":  "Am和弦-3",
-                                "info" : "Am和弦－重点文字展示-3",
+                                "video_url": RES_HOST + "/courses/basic/1/videos/2_3.mp4",
+                                /*"qupu_url": RES_HOST + "/courses/basic/1/qupu/1.gp5",*/
+                                "title":  "Am错误示范",
+                                "info" : "Am错误示范－重点文字展示-1",
+                                "other": "xxxx",
+                                "type" : "normal",
+                                "tracks": 3,
+                                "img_count": 1,
+                                "images": [
+                                    {
+                                        "url": RES_HOST + "/courses/basic/1/images/Error.png",
+                                        "time":"00:10",
+                                        "duration": 10
+                                    },
+                                ]
+                            },
+
+                            {
+                                "video_url": RES_HOST + "/courses/basic/1/videos/2_4.mp4",
+                                /*"qupu_url": RES_HOST + "/courses/basic/1/qupu/1.gp5",*/
+                                "title":  "Am引导演奏-1",
+                                "info" : "Am引导演奏-1－重点文字展示-1",
+                                "other": "xxxx",
+                                "type" : "normal",
+                                "tracks": 3
+                            },
+
+                            {
+                                "video_url": RES_HOST + "/courses/basic/1/videos/2_5.mp4",
+                                /*"qupu_url": RES_HOST + "/courses/basic/1/qupu/1.gp5",*/
+                                "title":  "Am引导演奏-2",
+                                "info" : "Am引导演奏-2－重点文字展示-2",
                                 "other": "xxxx",
                                 "type" : "normal",
                                 "tracks": 3
@@ -1405,32 +1429,13 @@ GetCourse.prototype.onGet = function(req, res) {
                         "id": 5,
                         "title":  "Em-Am和弦转换",
                         "img": RES_HOST + "/courses/basic/1/images/1.jpg",
-                        "pcount": 3,
+                        "pcount": 1,
                         "parts": [
                             {
-                                "video_url": RES_HOST + "/courses/basic/1/videos/1.mp4",
-                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/1.gp5",
-                                "title":  "Em-Am和弦转换-1",
-                                "info" : "Em-Am和弦转换－重点文字展示-1",
-                                "other": "xxxx",
-                                "type" : "normal",
-                                "tracks": 3
-                            },
-                            {
-                                "video_url": RES_HOST + "/courses/basic/1/videos/2.mp4",
+                                "video_url": RES_HOST + "/courses/basic/1/videos/2_6.mp4",
                                 "qupu_url": RES_HOST + "/courses/basic/1/qupu/2.gp5",
-                                "title":  "Em-Am和弦转换-2",
-                                "info" : "Em-Am和弦转换－重点文字展示-2",
-                                "other": "xxxx",
-                                "type" : "normal",
-                                "tracks": 3
-                            },
-
-                            {
-                                "video_url": RES_HOST + "/courses/basic/1/videos/3.mp4",
-                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/3.gp5",
-                                "title":  "Em-Am和弦转换-3",
-                                "info" : "Em-Am和弦转换－重点文字展示-3",
+                                "title":  "Am练习曲",
+                                "info" : "Am练习曲－重点文字展示-1",
                                 "other": "xxxx",
                                 "type" : "normal",
                                 "tracks": 3
@@ -1440,15 +1445,51 @@ GetCourse.prototype.onGet = function(req, res) {
 
                     {
                         "id": 6,
-                        "title":  "演奏全曲",
+                        "title":  "课后总结",
                         "pcount": 1,
                         "parts": [
                             {
                                 "img": RES_HOST + "/courses/basic/1/images/2.jpg",
-                                "video_url": RES_HOST + "/courses/basic/1/videos/2.mp4",
-                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/2.gp5",
-                                "title": "演奏全曲",
-                                "info" : "演奏全曲－重点文字展示",
+                                "video_url": RES_HOST + "/courses/basic/1/videos/3_0.mp4",
+                                /*"qupu_url": RES_HOST + "/courses/basic/1/qupu/2.gp5",*/
+                                "title": "课后总结",
+                                "info" : "课后总结－重点文字展示",
+                                "other": "yyyy",
+                                "type" : "full",
+                                "tracks": 3
+                            }
+                        ]
+                    },
+
+                    {
+                        "id": 7,
+                        "title":  "课终练习-BMP90",
+                        "pcount": 1,
+                        "parts": [
+                            {
+                                "img": RES_HOST + "/courses/basic/1/images/2.jpg",
+                                "video_url": RES_HOST + "/courses/basic/1/videos/3_1_BMP50.mp4",
+                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/3.gp5",
+                                "title": "课终练习-BMP90",
+                                "info" : "课终练习-BMP90－重点文字展示",
+                                "other": "yyyy",
+                                "type" : "full",
+                                "tracks": 3
+                            }
+                        ]
+                    },
+
+                    {
+                        "id": 8,
+                        "title":  "课终练习-BMP50",
+                        "pcount": 1,
+                        "parts": [
+                            {
+                                "img": RES_HOST + "/courses/basic/1/images/2.jpg",
+                                "video_url": RES_HOST + "/courses/basic/1/videos/3_1_BMP90.mp4",
+                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/4.gp5",
+                                "title": "课终练习-BMP50",
+                                "info" : "课终练习-BMP50－重点文字展示",
                                 "other": "yyyy",
                                 "type" : "full",
                                 "tracks": 3
@@ -1456,7 +1497,7 @@ GetCourse.prototype.onGet = function(req, res) {
                         ]
                     },
                     {
-                        "id": 7,
+                        "id": 9,
                         "title": "解锁曲目",
                         "pcount": 1,
                         "parts": [
