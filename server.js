@@ -1455,7 +1455,7 @@ GetCourse.prototype.onGet = function(req, res) {
                                 "title": "课后总结",
                                 "info" : "课后总结－重点文字展示",
                                 "other": "yyyy",
-                                "type" : "full",
+                                "type" : "normal",
                                 "tracks": 3
                             }
                         ]
