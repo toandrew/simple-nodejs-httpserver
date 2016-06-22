@@ -1463,15 +1463,15 @@ GetCourse.prototype.onGet = function(req, res) {
 
                     {
                         "id": 7,
-                        "title":  "课终练习-BMP90",
+                        "title":  "课终练习-BMP50",
                         "pcount": 1,
                         "parts": [
                             {
                                 "img": RES_HOST + "/courses/basic/1/images/2.jpg",
                                 "video_url": RES_HOST + "/courses/basic/1/videos/3_1_BMP50.mp4",
                                 "qupu_url": RES_HOST + "/courses/basic/1/qupu/3.gp5",
-                                "title": "课终练习-BMP90",
-                                "info" : "课终练习-BMP90－重点文字展示",
+                                "title": "课终练习-BMP50",
+                                "info" : "课终练习-BMP50－重点文字展示",
                                 "other": "yyyy",
                                 "type" : "full",
                                 "tracks": 3
@@ -1481,15 +1481,15 @@ GetCourse.prototype.onGet = function(req, res) {
 
                     {
                         "id": 8,
-                        "title":  "课终练习-BMP50",
+                        "title":  "课终练习-BMP90",
                         "pcount": 1,
                         "parts": [
                             {
                                 "img": RES_HOST + "/courses/basic/1/images/2.jpg",
                                 "video_url": RES_HOST + "/courses/basic/1/videos/3_1_BMP90.mp4",
                                 "qupu_url": RES_HOST + "/courses/basic/1/qupu/4.gp5",
-                                "title": "课终练习-BMP50",
-                                "info" : "课终练习-BMP50－重点文字展示",
+                                "title": "课终练习-BMP90",
+                                "info" : "课终练习-BMP90－重点文字展示",
                                 "other": "yyyy",
                                 "type" : "full",
                                 "tracks": 3
