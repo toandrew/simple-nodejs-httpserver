@@ -1377,7 +1377,7 @@ GetCourse.prototype.onGet = function(req, res) {
                             },
                             {
                                 "video_url": RES_HOST + "/courses/basic/1/videos/2_2.mp4",
-                                "qupu_url": RES_HOST + "/courses/basic/1/qupu/1.gp5",
+                                /*"qupu_url": RES_HOST + "/courses/basic/1/qupu/1.gp5",*/
                                 "title":  "Am注意事项",
                                 "info" : "Am注意事项－重点文字展示-1",
                                 "other": "xxxx",
